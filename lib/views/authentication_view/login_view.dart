@@ -45,12 +45,11 @@ class _LoginViewState extends State<LoginView> {
           if (state.exception is UserNotFoundAuthException) {
             await showErrorDialog(
               context,
-              "Cannot find a user with the entered credentials!",
+              "Error: User not found!",
             );
           } else if (state.exception is WrongPasswordAuthException) {
-            await showErrorDialog(
-              context,
-              "Wrong Credentials",
+            await showErrorDialog(context,
+              "Invalid Credentials",
             );
           } else if (state.exception is GenericAuthException) {
             await showErrorDialog(
@@ -61,7 +60,7 @@ class _LoginViewState extends State<LoginView> {
         }
       },
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blueGrey,
         body: Container(
           padding: EdgeInsets.only(top: screenHeight(30)),
           child: Padding(
@@ -80,7 +79,7 @@ class _LoginViewState extends State<LoginView> {
                       style: GoogleFonts.poppins(
                         fontSize: screenWidth(22.24),
                         fontWeight: FontWeight.w600,
-                        color: Colors.deepPurple[700],
+                        color: Colors.tealAccent[700],
                       ),
                     ),
                     SizedBox(
@@ -91,7 +90,7 @@ class _LoginViewState extends State<LoginView> {
                       style: GoogleFonts.poppins(
                         fontWeight: FontWeight.w400,
                         fontSize: screenWidth(11.8),
-                        color: Colors.deepPurple,
+                        color: Colors.tealAccent[700],
                       ),
                     ),
                     SizedBox(
@@ -184,7 +183,7 @@ class _LoginViewState extends State<LoginView> {
                                 },
                                 child: Text(
                                   style: GoogleFonts.poppins(
-                                    color: Colors.deepPurple,
+                                    color: Colors.tealAccent,
                                     decoration: TextDecoration.underline,
                                     decorationThickness: 1.5,
                                     fontSize: screenWidth(10.41),
@@ -201,7 +200,7 @@ class _LoginViewState extends State<LoginView> {
                             height: screenWidth(34.7),
                             child: OutlinedButton(
                               style: OutlinedButton.styleFrom(
-                                backgroundColor: Colors.deepPurpleAccent[400],
+                                backgroundColor: Colors.teal[400],
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
                                       screenHeight(20.86)),
@@ -228,14 +227,14 @@ class _LoginViewState extends State<LoginView> {
                                     Text(
                                       "Login",
                                       style: GoogleFonts.poppins(
-                                        color: Colors.white,
+                                        color: Colors.cyan,
                                         fontSize: screenWidth(12.51),
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
                                     const Icon(
                                       Icons.arrow_forward,
-                                      color: Colors.white,
+                                      color: Colors.cyan,
                                     ),
                                   ],
                                 ),
@@ -250,7 +249,7 @@ class _LoginViewState extends State<LoginView> {
                             children: [
                               Text(
                                 style: GoogleFonts.poppins(
-                                  color: Colors.deepPurple,
+                                  color: Colors.tealAccent,
                                   fontSize: screenWidth(10.42),
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -264,7 +263,7 @@ class _LoginViewState extends State<LoginView> {
                                 },
                                 child: Text(
                                   style: GoogleFonts.poppins(
-                                    color: Colors.deepPurple,
+                                    color: Colors.tealAccent,
                                     fontSize: screenWidth(10.42),
                                     fontWeight: FontWeight.w800,
                                   ),

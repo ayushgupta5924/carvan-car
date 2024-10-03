@@ -30,7 +30,7 @@ class _CaravanState extends State<Caravan> {
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomLeft,
-              colors: [Colors.white, Colors.white]),
+              colors: [Colors.white, Colors.grey]),
         ),
         child: Column(
           children: [
@@ -39,7 +39,7 @@ class _CaravanState extends State<Caravan> {
             ),
             isuploading
                 ? const LinearProgressIndicator(
-                    color: Colors.indigo,
+                    color: Color.fromARGB(255, 79, 101, 223),
                   )
                 : Container(),
             Row(
@@ -50,7 +50,7 @@ class _CaravanState extends State<Caravan> {
                   },
                   child: const Icon(
                     Icons.arrow_back,
-                    color: Colors.indigo,
+                    color: Color.fromARGB(255, 79, 101, 223),
                     size: 25,
                   ),
                 )
@@ -61,7 +61,7 @@ class _CaravanState extends State<Caravan> {
                 .textStyle(GoogleFonts.poppins(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
-                    color: Colors.deepPurple[700]))
+                    color: Colors.teal[700]))
                 .make(),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.05,
@@ -74,7 +74,7 @@ class _CaravanState extends State<Caravan> {
                   style: GoogleFonts.poppins(
                     fontWeight: FontWeight.bold,
                     fontSize: (15),
-                    color: Colors.deepPurple,
+                    color: Colors.teal,
                   ),
                 ).px16().py2(),
               ],
@@ -89,7 +89,7 @@ class _CaravanState extends State<Caravan> {
                 keyboardType: TextInputType.name,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.blue[100],
+                  fillColor: Colors.green[100],
                   hintStyle: GoogleFonts.poppins(
                     color: Colors.black54,
                   ),
@@ -120,7 +120,7 @@ class _CaravanState extends State<Caravan> {
                   style: GoogleFonts.poppins(
                     fontWeight: FontWeight.bold,
                     fontSize: (15),
-                    color: Colors.deepPurple,
+                    color: Colors.tealAccent,
                   ),
                 ).px16().py2(),
               ],

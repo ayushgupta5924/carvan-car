@@ -51,12 +51,12 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
         }
       },
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.cyan,
         appBar: AppBar(
           leading: IconButton(
             icon: const Icon(
-              Icons.arrow_back_ios,
-              color: Colors.white,
+              Icons.arrow_back_ios_new_rounded,
+              color: Colors.cyan,
             ),
             onPressed: () {
               context.read<AuthBloc>().add(
@@ -69,8 +69,8 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
           title: Text(
             'Forgot Password',
             style: GoogleFonts.poppins(
-              color: Colors.white,
-              fontWeight: FontWeight.w500,
+              color: Colors.cyan,
+              fontWeight: FontWeight.w600,
             ),
           ),
         ),
@@ -108,7 +108,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
                   Text(
                     "Don't worry it happens. Please enter your email address and we will send you a link to reset your password.",
                     style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w600,
                       fontSize: screenWidth(11.8),
                       color: AppColors.textColor1,
                     ),
@@ -163,8 +163,8 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
                             Text(
                               "Send me password reset link",
                               style: GoogleFonts.poppins(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w500,
+                                color: Colors.cyan,
+                                fontWeight: FontWeight.w600,
                                 fontSize: screenWidth(11.8),
                               ),
                             ),
